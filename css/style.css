@@ -1,0 +1,324 @@
+/* Import font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Reset gaya default dan set font untuk seluruh halaman */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Menggunakan box-sizing border-box di seluruh halaman */
+body {
+  box-sizing: border-box;
+}
+
+/* Membuat menu yang dapat di-scroll untuk halaman body "scroll-menu" */
+.scroll-menu {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* Gaya untuk header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fdb03dfd;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Gaya untuk bagian kiri header */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: rgba(29, 23, 23, 0.959);
+}
+
+/* Gaya teks pada bagian kiri header */
+.header-left p {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+/* Gaya gambar pada bagian kiri header */
+.header-left img {
+  width: 35px;
+  height: auto;
+  border-radius: 30px;
+  margin-left: 10px;
+}
+
+/* Gaya untuk navigasi */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+
+/* Gaya untuk tautan navigasi */
+nav ul li a {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(29, 23, 23, 0.959);
+  text-decoration: none;
+  position: relative;
+}
+
+/* Efek hover pada tautan navigasi */
+nav ul li a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  border-bottom: 3px solid rgba(29, 23, 23, 0.959);
+  bottom: -5px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efek hover pada tautan navigasi saat di-hover */
+nav ul li a:hover::before {
+  transform: scaleX(1);
+}
+
+/* Gaya untuk bagian utama (main) */
+main {
+  height: 100%;
+  display: flex;
+  margin-top: 10px;
+  color: rgba(29, 23, 23, 0.959);
+}
+
+/* Gaya untuk setiap bagian (section) */
+section {
+  width: 65%;
+  height: 100%;
+}
+
+section .note{
+  width: 1270px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: justify;
+  color: red;
+  margin: -30px 30px 0px;
+}
+/* Gaya untuk judul pada setiap bagian */
+section .title-section {
+  margin: 30px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* Gaya untuk deskripsi pada setiap bagian */
+section .description-section {
+  font-size: 20px;
+  margin: -10px 30px 0px;
+  text-align: justify;
+}
+
+/* Gaya untuk deskripsi tambahan pada beberapa bagian */
+section .description-section-first {
+  font-size: 20px;
+  margin: 0px 30px 0px;
+  text-align: justify;
+}
+
+section .description-section-second {
+  font-size: 20px;
+  margin: 0px 30px 0px;
+  text-align: justify;
+}
+
+/* Gaya untuk tautan dalam deskripsi */
+section .description-section a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #fdb03dfd;
+}
+
+/* Gaya untuk bagian konten (content) */
+section .content-section {
+  width: 100%;
+  height: 350px;
+  margin: 0px 30px 0px;
+  display: flex;
+}
+
+/* Gaya untuk input field */
+section #alas,
+#tinggi,
+#sisi-satu,
+#sisi-dua,
+#sisi-tiga {
+  width: 300px;
+  height: 30px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Gaya untuk tombol hitung dan reset */
+section #submit-luas,
+#submit-keliling,
+#reset-luas,
+#reset-keliling {
+  width: 140px;
+  height: 35px;
+  background-color: #fdb03dfd;
+  outline: none;
+  margin: 35px 5px 0px 5px;
+  border-radius: 3px;
+  border: 1.5px solid black;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+section #submit-luas:disabled, #submit-keliling:disabled{
+  display: none;
+}
+
+/* Efek hover pada tombol */
+section #submit-luas:hover,
+#submit-keliling:hover,
+#reset-luas:hover,
+#reset-keliling:hover {
+  transform: translateY(-5px);
+}
+
+/* Gaya untuk keterangan pada input field dan tombol */
+section .caption-section {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 40px 0px 0px;
+}
+
+/* Gaya untuk wadah data form */
+section .form-data {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Gaya untuk tombol "Try it" */
+section #btn-a {
+  width: 80px;
+  height: auto;
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 30px;
+  border-radius: 5px;
+  background-color: #fdb03dfd;
+  color: rgba(29, 23, 23, 0.959);
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid rgba(29, 23, 23, 0.959);
+}
+
+/* Efek hover pada tombol "Try it" */
+section #btn-a:hover {
+  transform: translateY(-5px);
+}
+
+/* Gaya untuk bagian output pada perhitungan luas */
+section .output-section-luas {
+  width: 480px;
+  height: 250px;
+  margin: 20px 0px 0px 50px;
+  border: 2px solid rgba(29, 23, 23, 0.959);
+  border-radius: 3px;
+}
+
+/* Gaya untuk bagian output pada perhitungan keliling */
+section .output-section-keliling {
+  width: 480px;
+  height: 325px;
+  margin: 20px 0px 0px 50px;
+  border: 2px solid rgba(29, 23, 23, 0.959);
+  border-radius: 3px;
+}
+
+/* Gaya untuk judul pada bagian output */
+section .title-output {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+/* Gaya untuk deskripsi pada bagian output */
+section .desc-output {
+  margin: 5px 10px 0px;
+}
+
+/* Gaya untuk deskripsi tambahan pada bagian output */
+section .desc-output-dua {
+  margin: 0px 95px 0px;
+}
+
+/* Gaya untuk hasil pada bagian output */
+section .desc-hasil {
+  margin: 0px 110px 0px;
+}
+
+/* Gaya untuk sidebar (aside) */
+aside {
+  height: 100%;
+}
+
+/* Gaya untuk ilustrasi sampul */
+aside .ilustration-cover {
+  margin-top: 20px;
+  width: 500px;
+  height: 500px;
+}
+
+/* Gaya untuk ilustrasi pada perhitungan luas segitiga */
+aside .ilustration-triangle-luas {
+  margin: 70px 30px 0px;
+  width: 400px;
+  height: 400px;
+}
+
+/* Gaya untuk ilustrasi pada perhitungan keliling segitiga */
+aside .ilustration-triangle-keliling {
+  margin: 200px 30px 0px;
+  width: 400px;
+  height: 400px;
+}
+
+/* Gaya untuk ilustrasi pada bagian tentang */
+aside .ilustration-about {
+  margin-top: 40px;
+  width: 450px;
+  height: 400px;
+}
+
+/* Gaya untuk bagian footer */
+footer {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgba(29, 23, 23, 0.959);
+}
+
+/* Gaya untuk footer pada halaman utama (index) */
+.footer-index {
+  margin: -30px 30px 0px;
+}
+
+/* Gaya untuk footer pada halaman menu */
+.footer-menu {
+  margin: 30px 30px 20px;
+}
+
+/* Gaya untuk footer pada halaman tentang */
+.footer-about {
+  margin: 50px 30px 0px;
+}

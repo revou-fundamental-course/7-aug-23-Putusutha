@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>| Website Kaltik</title>
+    <link rel="shortcut icon" href="./assets/logo.png">
+</head>
+<body class="scroll-menu">
+    <header>
+        <div class="header-left">
+            <img src="./assets/logo.png" alt="logo_kaltik">
+            <p>KALTIK</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="section-luas">
+            <h2 class="title-section">Cara Hitung Luas Segitiga</h2>
+            <p class="description-section">Silakan masukkan nilai alas dan tinggi yang ingin anda hitung luasnya lalu tekan tombol hitung.</p>
+            <div class="content-section">
+                <div class="form-data">
+                    <p class="caption-section">Masukkan Alas Dari Segitiga</p>
+                    <input type="number" id="alas">
+                    <p class="caption-section">Masukkan Tinggi Dari Segitiga</p>
+                    <input type="number" id="tinggi">
+                    <div class="btn-section">
+                    <button id="submit-luas">Hitung</button>
+                    <button id="reset-luas">Reset</button>
+                    </div>
+                </div>
+                <div class="output-section-luas">
+                    <p class="title-output">Penjelasan : </p>
+                    <p class="desc-output">Diketahui : Alas Segitiga (a)  <span id="desc-alas"></span></p>
+                    <p class="desc-output-dua"> Tinggi Segitiga (t)  <span id="desc-tinggi"></span></p>
+                    <p class="desc-output">Rumus : Luas Segitiga (L) = 1/2 X a X t</p>
+                    <p class="desc-output">Jawaban : <span id="desc-rumus"></span> </p>
+                    <p class="desc-hasil"><span id="desc-jawaban"></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="note">
+            <p>Note : Jika memasukan karakter lain selain angka maka tombol hitung otomatis menghilang tapi begitu sebaliknya bila dimasukkan angka maka tombol hitung akan muncul kembali secara otomatis berlaku pada hitung luas maupun keliling.</p>
+        </div>
+        <div class="section-keliling">
+            <h2 class="title-section">Cara Hitung keliling Segitiga</h2>
+            <p class="description-section">Silakan masukkan nilai dari masing masing sisi segitiga yang ingin anda hitung kelilingnya lalu tekan tombol hitung.</p>
+            <div class="content-section">
+                <div class="form-data">
+                    <p class="caption-section -">Masukkan AB Dari Segitiga</p>
+                    <input type="number" id="sisi-satu">
+                    <p class="caption-section">Masukkan Sisi AC Dari Segitiga</p>
+                    <input type="number" id="sisi-dua">
+                    <p class="caption-section">Masukkan Sisi BC Dari Segitiga</p>
+                    <input type="number" id="sisi-tiga">
+                    <div class="btn-section">
+                        <button id="submit-keliling">Hitung</button>
+                        <button id="reset-keliling">Reset</button>
+                    </div>                
+                    </div>
+                <div class="output-section-keliling">
+                    <p class="title-output">Penjelasan : </p>
+                    <p class="desc-output">Diketahui : Panjang Sisi AB (S1)<span id="desc-Sab"></span>
+                    </p>
+                    <p class="desc-output-dua"> Panjang Sisi AC (S2)  <span id="desc-Sac"></span></p>
+                    <p class="desc-output-dua"> Panjang Sisi BC (S3) <span id="desc-Sbc"></span></p>
+                    <p class="desc-output">Rumus : Keliling Segitiga (K) = S1 + S2 + S3</p>
+                    <p class="desc-output">Jawaban : <span id="desc-cara"></span> </p>
+                    <p class="desc-hasil"><span id="desc-hasil"></span></p>
+                </div>
+            </div>
+        </div>
+        </section>
+        <aside>
+            <img class="ilustration-triangle-luas" src="./assets/segitiga.jpg">
+            <img class="ilustration-triangle-keliling" src="./assets/segitiga.jpg">
+        </aside>
+    </main>
+    <footer class="footer-menu">Copyright &copy; by Putu For Fundamental Course RevoU</footer>
+</body>
+<script src="./js/script.js"></script>
+
+</html>
